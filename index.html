@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visma internship</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+      <section class="images-menu">
+        <div class="images"></div>
+      <div class="pagination">
+        <a onclick="prevImg()" href="#">❮</a>
+        <a onclick="nextImg()" href="#">❯</a>
+      </div>
+      </section>
+      
+      <section class="display-section">
+        <h1 id="main-title"><i>Visma internship</i></h1>
+        <div class="info"></div>
+        <div id="blur-container">
+          <div class="display-container"></div>
+        </div>
+
+        <div class="filters">
+          <div class="filter-container">
+            <label for="grayscale">Black and white</label>
+            <input type="checkbox" id="grayscale" oninput="addGray(this.checked)"
+            >
+          </div>
+          <div class="filter-container">
+            <label for="blur">Blur</label>
+            <input type="range" min="1" max="20" value="0" id="blur" oninput="addBlur(this.value)">
+          </div>
+        </div>
+      </section>
+  </main>
+</body>
+</html>
